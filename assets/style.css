@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Kanit', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(75, 75, 75);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* BARRA DE SCROLL DO SITE  */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #e9e9e9;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(173, 173, 173);
+    border-radius: 10px;
+}
+
+/* FIM DA BARRA DE SCROLL  */
+
+/* CONTEUDO PRINCIPAL  */
+.main {
+    margin: 2rem 4rem;
+    padding-top: 20px;
+    margin-bottom: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+ul {
+    list-style: none;
+
+}
+
+ul li {
+    display: flex;
+    text-align: left;
+    font-size: 20px;
+}
+
+a {
+    margin-left: 10px;
+}
+
+/* INÍCIO */
+
+/* IMAGENS */
+.logo_egp {
+    width: auto;
+    height: 70px;
+    margin-right: 1rem;
+}
+
+.logo_seplag {
+    width: auto;
+    height: 90px;
+    margin-left: 1rem;
+}
+
+/* TITULO */
+.title {
+    color: #26a737;
+    font-size: 4rem;
+    margin-top: 0.8rem;
+}
+
+/* TEXTO ABAIXO DO TITULO  */
+.description {
+    font-size: 1rem;
+    margin-top: -0.6rem;
+    padding-bottom: 30px;
+    color: rgb(75, 75, 75);
+}
+
+/* CLASSE PARA CENTRALIZAR OS DEMAIS CONTEUDOS   */
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* TITULO DA SEGUNDA PAGINA  */
+.subtitle {
+    color: #26a737;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+/* BACKGROUND DAS PAGINAS VERDES */
+.background_green {
+    background-color: #26a737;
+}
+
+.background_orange {
+    background-color: #e94f0e;
+}
+
+/* TITULO BRANCO  */
+.title_white {
+    color: #ffff;
+    padding-bottom: 30px;
+    font-size: 60px;
+}
+
+.title_orange {
+    color: #e06a0c;
+    display: flex;
+    text-align: left;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 1.8em;
+}
+
+/* MARGEM DE TODOS OS TITULOS  */
+.margin_title {
+    margin: 3rem 4rem;
+}
+
+/* TITULO OBJETIVOS PARA CENTRALIZAR  */
+
+.title_white_green {
+    margin: 0.2em 0;
+    display: flex;
+    text-align: left;
+}
+
+.title_white_orange {
+    margin: 0.6em 0;
+    display: flex;
+    text-align: left;
+}
+
+/* PARAGRAFO DA PAGINA DE OBJETIVOS  */
+.paragrafo {
+    color: #ffff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+    font-weight: light;
+}
+
+/* TITULO DA PAGINA DE PRINCIPIOS */
+.title_principios {
+    display: flex;
+    text-align: left;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+
+/* IMAGENS DA PAGINA DE PRINCIPIOS */
+.img_principios {
+    height: 100px;
+    margin-top: 2.5rem;
+}
+
+
+
+/* IMAGENS DAS PAGINAS COM CAIXA DE TEXTO  */
+.img_pessoa {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+}
+
+/* CAIXA DE TEXTO DA PAGINA DE PRINCIPIOS  */
+.square {
+    padding: 2rem;
+    padding-left: 6rem;
+    margin: 1.5rem 0;
+}
+
+/* TITULO DA CAIXA DA PAGINA DE PRINCIPIOS ESQUERDO */
+.square .title {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* TITULO CAIXA DE PRINCIPIOS DO LADO DIREITO */
+.square2 .title {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: end;
+}
+
+/* CAIXA DE TEXTO DE PRINCIPIOS LADO DIREITO  */
+.square2 {
+    padding: 2rem;
+    padding-right: 6rem;
+    margin: 1.5rem 0;
+}
+
+/* PARAGRAFO DA CAIXA DE TEXTO DO LADO DIREITO  */
+.square2 p {
+    display: flex;
+    text-align: end;
+}
+
+/* ESTILO GERAL DOS PARAGRAFOS DE CAIXA DE TEXTO  */
+.square p,
+.square2 p {
+    color: #ffff;
+    font-size: 25px;
+    font-weight: light;
+}
+
+/* CORES DAS CAIXAS */
+.green {
+    background-color: #26a737;
+}
+
+.darkorange {
+    background-color: #e94f0e;
+}
+
+.orange {
+    background-color: #e4a500;
+}
+
+.blue {
+    background-color: #2db39e;
+}
+
+/* BOTOES PARA PASSAR DE PAGINA  */
+
+.button {
+    border: 1px solid #26a737;
+    border-radius: 7px;
+    color: #26a737;
+    background: none;
+    font-size: 20px;
+    padding: 7px;
+    margin: 1rem;
+    opacity: 80%;
+}
+
+.icone {
+    color: #26a737;
+    margin: 0 5px;
+}
+
+.button:hover {
+    color: #ffff;
+    background-color: #26a737;
+}
+
+.button:hover>.icone {
+    color: #ffff;
+}
+
+/* BOTOES BRANCOS  */
+
+.button_white {
+    color: #ffff;
+    border: 1px solid #ffff;
+    border-radius: 7px;
+    background: none;
+    font-size: 20px;
+    padding: 7px;
+    margin: 1rem;
+    opacity: 80%;
+}
+
+.icone_white {
+    color: #ffff;
+    margin: 0 5px;
+}
+
+.button_white:hover {
+    color: #26a737;
+    background-color: #ffff;
+}
+
+.button_white:hover>.icone_white {
+    color: #26a737;
+}
+
+/* IMAGEM DE FUNDO DA PAGINA 03 E 04  */
+.background_img {
+    /* position: fixed; */
+    margin-top: 4rem;
+    left: 0;
+    bottom: 0;
+}
+
+/* PARAGRAFO DA PAGINA 03 */
+.p_white {
+    color: #ffff;
+    font-weight: light;
+    font-size: 40px;
+    max-width: 60%;
+    display: flex;
+    text-align: left;
+
+}
+
+.paragrafo12 {
+    font-size: 40px;
+    margin: 3em 7em;
+}
+
+.paragrafo17 {
+    margin-left: 4em;
+    max-width: 70%;
+}
+
+.text_green {
+    color: #26a737;
+}
+
+.lista {
+    margin: 2em 3em;
+    padding-bottom: 30px;
+    color: #ffff;
+    font-size: 25px;
+}
+
+.lista_gray {
+    margin: 2em 3em;
+    font-size: 25px;
+}
+
+.circle_orange {
+    color: #e4a500;
+    margin-right: 10px;
+    margin-bottom: -50px;
+    font-size: 30px;
+}
+
+.circle_green {
+    color: #26a737;
+    margin-right: 10px;
+    margin-bottom: -50px;
+    font-size: 30px;
+}
+
+.img14 {
+    margin-top: -10em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img15 {
+    margin-top: -2em;
+}
+
+.img16 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.titulo_orange {
+    color: #e94f0e;
+    font-size: 20px;
+    padding: 20px;
+    background-color: #ffff;
+    z-index: 999;
+}
+
+.line_orange {
+    opacity: 100% !important;
+    border: 1px solid #e94f0e;
+    margin-top: -2.5em;
+    margin-bottom: 3em;
+}
+
+.txt_orange {
+    color: #e94f0e;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.txt20 {
+    font-size: 15px;
+}
+
+.txt20 a {
+    color: rgb(75, 75, 75);
+}
+
+strong a {
+    font-weight: lighter;
+}
+
+.txt_white {
+    color: #ffff;
+    padding-bottom: 30px;
+}
+.acessar {
+    padding-bottom: 30px;
+    margin-top: -40px;
+}
+
+/* RESPONSIVIDADE PARA COMPUTADOR */
+
+@media screen {
+    @media (min-width:769px) {
+
+        /* COLUNA QUE DIVIDE IMAGEM E CAIXAS DE TEXTO DA PAGINA DE PRINCIPIOS  */
+        .wrapper {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin-top: 2rem;
+        }
+
+        .objetivos {
+            margin: 30px 0;
+            display: flex;
+            text-align: left;
+        }
+
+    }
+}
+
+
+
+/* RESPONSIVIDADE PARA CELULAR */
+
+@media screen {
+    @media (max-width:800px) {
+        .main {
+            box-shadow: none;
+            margin: 10px 30px;
+            padding: 0;
+        }
+
+        .img_index {
+            width: 90%;
+            height: auto;
+            margin: 3em 0 0 0;
+        }
+
+        .logo_egp {
+            height: 50px;
+        }
+
+        .logo_seplag {
+            height: 60px;
+        }
+
+        .title {
+            font-size: 2em;
+        }
+
+        .description {
+            font-size: 10px;
+        }
+
+        .title_white {
+            font-size: 30px !important;
+            font-weight: bold;
+            padding-top: 30px;
+            /* display: flex; */
+            /* text-align: left; */
+        }
+
+        .title_orange {
+            margin-top: -5px;
+        }
+
+        .logo {
+            margin-top: 20px;
+            height: 70px;
+        }
+
+        .background_img {
+            display: none;
+        }
+
+        .margin_title {
+            margin: 0;
+        }
+
+        .p_white {
+            font-size: 20px;
+            max-width: 100%;
+        }
+
+        .responsive_center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo04 {
+            width: 100px;
+        }
+
+        .img_pessoa {
+            display: none;
+        }
+
+        .square {
+            padding: 2rem;
+            padding-left: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        .square2 {
+            padding: 2rem;
+            padding-left: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        .title_principios {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 15px !important;
+        }
+
+        .square .title {
+            font-size: 22px;
+        }
+
+        .square2 .title {
+            font-size: 22px;
+        }
+
+        .paragrafo12 {
+            font-size: 40px;
+            margin: 1em 1em;
+        }
+
+        .img12 {
+            width: 100%;
+            height: auto;
+        }
+
+        .ol,
+        ul {
+            padding-left: 0 !important;
+        }
+
+        .lista {
+            margin: 1em;
+            font-size: 20px;
+        }
+
+        .lista_gray {
+            margin: 1em;
+            font-size: 20px;
+        }
+
+        .img14 {
+            margin-top: 0;
+        }
+
+        .rodape {
+            font-size: 5px;
+
+        }
+    }
+}
