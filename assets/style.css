@@ -12,7 +12,14 @@
 body {
     overflow-x: hidden;
 }
+/* BACKGROUND DAS PAGINAS VERDES */
+.background_green {
+    background-color: #5db12f;
+}
 
+.background_orange {
+    background-color: #e06a0c;
+}
 /* BARRA DE SCROLL DO SITE  */
 body::-webkit-scrollbar {
     width: 12px;
@@ -96,14 +103,7 @@ a {
     margin-bottom: 3rem;
 }
 
-/* BACKGROUND DAS PAGINAS VERDES */
-.background_green {
-    background-color: #26a737;
-}
 
-.background_orange {
-    background-color: #e94f0e;
-}
 
 /* TITULO BRANCO  */
 .title_white {
@@ -176,32 +176,36 @@ a {
 
 /* CAIXA DE TEXTO DA PAGINA DE PRINCIPIOS  */
 .square {
-    padding: 2rem;
+    padding: 2rem 0.5rem;
     padding-left: 6rem;
     margin: 1.5rem 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
-
+/* CAIXA DE TEXTO DE PRINCIPIOS LADO DIREITO  */
+.square2 {
+    padding: 2rem 0.5rem;
+    padding-right: 6rem;
+    margin: 1.5rem 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
 /* TITULO DA CAIXA DA PAGINA DE PRINCIPIOS ESQUERDO */
 .square .title {
-    color: black;
+    color: rgb(29, 29, 29);
     font-size: 30px;
     font-weight: bold;
 }
 
 /* TITULO CAIXA DE PRINCIPIOS DO LADO DIREITO */
 .square2 .title {
-    color: black;
+    color: rgb(29, 29, 29);
     font-size: 30px;
     font-weight: bold;
     text-align: end;
 }
 
-/* CAIXA DE TEXTO DE PRINCIPIOS LADO DIREITO  */
-.square2 {
-    padding: 2rem;
-    padding-right: 6rem;
-    margin: 1.5rem 0;
-}
+
 
 /* PARAGRAFO DA CAIXA DE TEXTO DO LADO DIREITO  */
 .square2 p {
@@ -403,6 +407,7 @@ strong a {
 .acessar {
     padding-bottom: 30px;
     margin-top: -40px;
+    color: #ffff;
 }
 
 /* RESPONSIVIDADE PARA COMPUTADOR */
@@ -480,7 +485,9 @@ strong a {
         .background_img {
             display: none;
         }
-
+        .img_none{
+            display: none;
+        }
         .margin_title {
             margin: 0;
         }
