@@ -97,6 +97,7 @@ body::-webkit-scrollbar-thumb {
 .footer_index:hover {
     transform: scale(1.1);
 }
+
 .icone_capa {
     color: #26a737;
     margin-right: 10px;
@@ -105,6 +106,7 @@ body::-webkit-scrollbar-thumb {
 .topicos {
     margin: 3rem 0;
 }
+
 @media screen {
     @media (min-width:1000px) {
         .index_main {
@@ -168,9 +170,17 @@ body::-webkit-scrollbar-thumb {
     }
 
     @media (max-width:700px) {
+        .header1 {
+            box-shadow: none;
+            width: 100%;
+            /* padding: 10px; */
+            height: 85px;
+            /* position: fixed; */
+        }
         .menu {
             background-color: #26a737;
             width: 100%;
+            margin-top: -10px;
             margin: 0;
             border-radius: 0;
             display: flex;
@@ -253,10 +263,15 @@ body::-webkit-scrollbar-thumb {
 .subtopico {
     color: #26a737;
     transition: color 0.2s;
+
 }
-.subtopico:hover{
+h4{
+    margin-bottom: 20px !important;
+}
+.subtopico:hover {
     color: #14581d;
 }
+
 .icone_mouse {
     color: #26a737;
     margin-left: 10px;
