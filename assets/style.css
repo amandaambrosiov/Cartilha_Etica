@@ -71,7 +71,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
     color: #26a737;
     font-size: 25px;
-    margin-top: -12px;
+    margin-top: -20px;
 }
 
 .capa {
@@ -105,6 +105,53 @@ body::-webkit-scrollbar-thumb {
 
 .topicos {
     margin: 3rem 0;
+}
+
+.footer {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding-top: 20px;
+
+}
+
+.footer_title {
+    font-size: 16px;
+}
+
+.footer_list {
+    font-size: 12px;
+}
+
+.icone_footer {
+    background-color: #26a737;
+    margin: 0.1rem;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffff;
+    transition: 0.4s;
+    margin-bottom: 1rem;
+}
+
+.icone_footer:hover {
+    transform: scale(1.2);
+}
+
+.link {
+    color: rgb(75, 75, 75);
+}
+
+.copyright {
+    background-color: #26a737;
+    color: white;
+    font-weight: light;
+    font-size: 15px;
+    padding: 8px;
+    margin-top: 1rem;
+}
+
+.fa-copyright {
+    margin-right: 10px;
+    margin-top: 2px;
+    color: #ffff;
 }
 
 @media screen {
@@ -177,6 +224,7 @@ body::-webkit-scrollbar-thumb {
             height: 85px;
             /* position: fixed; */
         }
+
         .menu {
             background-color: #26a737;
             width: 100%;
@@ -249,7 +297,7 @@ body::-webkit-scrollbar-thumb {
 .side_box {
     background-color: rgb(245, 245, 245);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    margin: 2rem 1rem;
+    margin: 0 1rem;
     padding: 30px 20px;
 }
 
@@ -257,6 +305,15 @@ body::-webkit-scrollbar-thumb {
     color: #26a737;
     font-size: 40px;
     font-weight: 700;
+    margin-top: 5rem;
+    margin-bottom: 40px;
+}
+
+.side_box .index_title {
+    color: #26a737;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 0;
     margin-bottom: 40px;
 }
 
@@ -265,9 +322,11 @@ body::-webkit-scrollbar-thumb {
     transition: color 0.2s;
 
 }
-h4{
+
+h4 {
     margin-bottom: 20px !important;
 }
+
 .subtopico:hover {
     color: #14581d;
 }
