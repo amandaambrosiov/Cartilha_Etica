@@ -68,7 +68,6 @@ header {
 
 .nome {
     float: left;
-    padding: 5px;
     padding: 10px;
     margin-top: 5px;
 }
@@ -76,6 +75,7 @@ header {
 .nome h4 {
     font-weight: 300;
     font-size: 18px;
+    margin-left: 2rem;
 }
 
 .nome h2 {
@@ -83,6 +83,7 @@ header {
     color: #26a737;
     font-size: 25px;
     margin-top: -20px;
+    margin-left: 2rem;
 }
 
 /* INICIO DO CONTEUDO PRINCIPAL  */
@@ -685,7 +686,7 @@ strong a {
 
 @media screen {
 
-    @media (max-width:700px) {
+    @media (max-width:750px) {
         .header1 {
             box-shadow: none;
             width: 100%;
