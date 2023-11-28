@@ -15,6 +15,7 @@ body {
     margin: 0;
     max-width: 100%;
     padding: 0;
+    transition: background-color 0.3s ease;
 }
 
 /* BACKGROUND DAS PAGINAS VERDES */
@@ -41,6 +42,89 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* FIM DA BARRA DE SCROLL  */
+.fa-arrow-left {
+    transition: 0.3s;
+}
+
+.fa-arrow-left:hover {
+    transform: translate(-8px);
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode * {
+    /* background-color: #333; */
+    color: #fff;
+}
+
+.dark-mode .titulo_orange {
+    background-color: #333;
+}
+
+.dark-mode .txt20 a {
+    color: white;
+}
+
+.dark-mode .page_title h4 {
+    color: white;
+}
+
+.dark-mode .fa-arrow-left {
+    color: white;
+}
+
+.dark-mode .description {
+    color: white;
+}
+
+.dark-mode .logo_egp {
+    display: none;
+}
+
+.dark-mode .logo_egp_escuro {
+    display: block;
+}
+
+.dark-mode .logo_seplag {
+    display: none;
+}
+
+.dark-mode .logo_seplag_escuro {
+    display: block;
+}
+
+#toggleBtn {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-right: 20px;
+}
+
+.bi-sun-fill {
+    background: #363636;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 50%;
+    box-shadow: rgba(17, 17, 17, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.bi-moon-stars-fill {
+
+    background: white;
+    border: none;
+    color: #333;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 50%;
+    box-shadow: rgba(239, 239, 241, 0.25) 0px 13px 27px -5px, rgba(240, 238, 238, 0.3) 0px 8px 16px -8px;
+}
 
 /* ESTILOS PRINCIPAIS  */
 .col a {
@@ -62,7 +146,34 @@ header {
     /* position: fixed; */
 }
 
+.page_header {
+    /* background-color: #0000002a; */
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.btn_back {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.page_title h4 {
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.page_title h2 {
+    font-weight: bold;
+    color: #26a737;
+    font-size: 25px;
+    margin-top: -20px;
+    /* margin-left: 2rem; */
+}
 
 /* TITULOS DO HEADER  */
 
@@ -86,6 +197,13 @@ header {
     margin-left: 2rem;
 }
 
+.index_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+}
+
 /* INICIO DO CONTEUDO PRINCIPAL  */
 
 /* IMAGEM DA CAPA  */
@@ -95,6 +213,10 @@ header {
     width: auto;
     transition: 0.5s;
 }
+.dark-mode .capa{
+    filter: drop-shadow(5px 5px 10px rgb(20, 20, 20));
+}
+
 
 /* FOOTER DOS LINKS PARA CARTILHA  */
 
@@ -143,6 +265,9 @@ header {
     filter: drop-shadow(10px 10px 4px grey);
     margin-right: 20px;
 }
+.dark-mode .cartilha{
+    filter: drop-shadow(10px 10px 4px rgb(19, 19, 19));
+}
 
 
 .img_index {
@@ -167,11 +292,15 @@ header {
 }
 
 .side_box {
-    background-color: rgb(245, 245, 245);
+    /* background-color: rgb(245, 245, 245); */
     box-shadow: rgba(149, 157, 165, 0.39) 0px 8px 24px;
     margin: 1rem 1rem;
     padding: 30px 20px;
 }
+.dark-mode .side_box{
+    box-shadow: rgba(10, 10, 10, 0.39) 0px 8px 24px;
+}
+
 
 .index_title {
     color: #26a737;
@@ -231,6 +360,9 @@ ul li {
     font-size: 20px;
 }
 
+.lista_apresentação li {
+    font-size: 12px;
+}
 
 /* INÍCIO */
 
@@ -241,14 +373,28 @@ ul li {
 /* IMAGENS */
 .logo_egp {
     width: auto;
-    height: 70px;
+    height: 60px;
     margin-right: 1rem;
+}
+
+.logo_egp_escuro {
+    width: auto;
+    height: 65px;
+    margin-right: 1rem;
+    display: none;
 }
 
 .logo_seplag {
     width: auto;
-    height: 90px;
+    height: 80px;
     margin-left: 1rem;
+}
+
+.logo_seplag_escuro {
+    width: auto;
+    height: 60px;
+    margin-left: 1rem;
+    display: none;
 }
 
 /* TITULO */
@@ -285,17 +431,17 @@ ul li {
 /* TITULO BRANCO  */
 .title_white {
     color: #ffff;
-    padding-bottom: 30px;
-    font-size: 60px;
+    /* padding-bottom: 30px; */
+    font-size: 30px;
 }
 
 .title_orange {
     color: #e06a0c;
     display: flex;
     text-align: left;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bolder;
-    margin-top: 1.8em;
+    /* margin: 3em 0 1em 2em; */
 }
 
 /* MARGEM DE TODOS OS TITULOS  */
@@ -320,10 +466,10 @@ ul li {
 /* PARAGRAFO DA PAGINA DE OBJETIVOS  */
 .paragrafo {
     color: #ffff;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
-    margin: 0 10%;
+    margin: 0 10% 0 0;
     font-weight: light;
 }
 
@@ -331,15 +477,22 @@ ul li {
 .title_principios {
     display: flex;
     text-align: left;
-    font-size: 50px;
+    /* font-size: 50px; */
     font-weight: bolder;
-    margin-top: 2rem;
+    margin: 2rem 0 0 2em;
 }
 
 /* IMAGENS DA PAGINA DE PRINCIPIOS */
 .img_principios {
-    height: 100px;
-    margin-top: 2.5rem;
+    /* height: 80px; */
+    margin-top: 0.5rem;
+    float: right;
+}
+
+.img_principios_escuro {
+    /* height: 80px; */
+    margin-top: 0.5rem;
+    float: right;
 }
 
 
@@ -348,12 +501,12 @@ ul li {
 .img_pessoa {
     display: flex;
     justify-content: center;
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 
 /* CAIXA DE TEXTO DA PAGINA DE PRINCIPIOS  */
 .square {
-    padding: 2rem 0.5rem;
+    padding: 1rem 0.5rem;
     padding-left: 6rem;
     margin: 1.5rem 0;
     border-top-right-radius: 8px;
@@ -362,7 +515,7 @@ ul li {
 
 /* CAIXA DE TEXTO DE PRINCIPIOS LADO DIREITO  */
 .square2 {
-    padding: 2rem 0.5rem;
+    padding: 1rem 0.5rem;
     padding-right: 6rem;
     margin: 1.5rem 0;
     border-top-left-radius: 8px;
@@ -372,14 +525,14 @@ ul li {
 /* TITULO DA CAIXA DA PAGINA DE PRINCIPIOS ESQUERDO */
 .square .title {
     color: rgb(29, 29, 29);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 /* TITULO CAIXA DE PRINCIPIOS DO LADO DIREITO */
 .square2 .title {
     color: rgb(29, 29, 29);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     text-align: end;
 }
@@ -396,7 +549,7 @@ ul li {
 .square p,
 .square2 p {
     color: #ffff;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: light;
 }
 
@@ -418,6 +571,10 @@ ul li {
 }
 
 /* BOTOES PARA PASSAR DE PAGINA  */
+.dark-mode .button {
+    color: #fff;
+    border: 1px solid #ffff;
+}
 
 .button {
     border: 1px solid #26a737;
@@ -430,14 +587,27 @@ ul li {
     opacity: 80%;
 }
 
+.dark-mode .icone {
+    color: #ffff;
+}
+
 .icone {
     color: #26a737;
     margin: 0 5px;
 }
 
+.dark-mode .button:hover {
+    background-color: #ffff;
+    color: #26a737;
+}
+
 .button:hover {
     color: #ffff;
     background-color: #26a737;
+}
+
+.dark-mode .button:hover>.icone {
+    color: #26a737;
 }
 
 .button:hover>.icone {
@@ -483,7 +653,7 @@ ul li {
 .p_white {
     color: #ffff;
     font-weight: light;
-    font-size: 40px;
+    font-size: 20px;
     max-width: 60%;
     display: flex;
     text-align: left;
@@ -491,8 +661,8 @@ ul li {
 }
 
 .paragrafo12 {
-    font-size: 40px;
-    margin: 3em 7em;
+    font-size: 25px;
+    margin: 1em 2em;
 }
 
 .paragrafo17 {
@@ -505,15 +675,15 @@ ul li {
 }
 
 .lista {
-    margin: 2em 3em;
+    margin: 2em 0 -1em 0;
     padding-bottom: 30px;
     color: #ffff;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .lista_gray {
-    margin: 2em 3em;
-    font-size: 25px;
+    margin: 1em 2em;
+    font-size: 18px;
 }
 
 .circle_orange {
@@ -531,7 +701,7 @@ ul li {
 }
 
 .img14 {
-    margin-top: -10em;
+    margin-top: -7em;
     display: flex;
     justify-content: flex-end;
 }
@@ -653,6 +823,12 @@ strong a {
     }
 
     @media (min-width:1000px) {
+        .paragrafo17 {
+            margin-left: 1em;
+            margin-top: 2em;
+            /* max-width: 70%; */
+        }
+
         .img_site {
             height: auto;
             width: 500px;
@@ -672,7 +848,7 @@ strong a {
         }
 
         .objetivos {
-            margin: 30px 0;
+            /* margin: 30px 0; */
             display: flex;
             text-align: left;
         }
@@ -743,6 +919,7 @@ strong a {
             height: auto;
             width: 200px;
         }
+
         .main {
             box-shadow: none;
             margin: 10px 30px;
@@ -778,17 +955,18 @@ strong a {
         .title_white {
             font-size: 30px !important;
             font-weight: bold;
-            padding-top: 30px;
-            /* display: flex; */
-            /* text-align: left; */
+            padding-top: 10px;
+            display: flex;
+            text-align: left;
+            margin-bottom: 40px;
         }
 
         .title_orange {
-            margin-top: -5px;
+            margin: 10px 0 10px 2px !important;
         }
 
         .logo {
-            margin-top: 20px;
+            margin-top: 10px;
             height: 70px;
         }
 
@@ -823,19 +1001,20 @@ strong a {
         }
 
         .square {
-            padding: 2rem;
+            padding: 0.5rem;
             padding-left: 2rem;
             margin: 1.5rem 0;
         }
 
         .square2 {
-            padding: 2rem;
+            padding: 0.5rem;
             padding-left: 2rem;
             margin: 1.5rem 0;
         }
 
         .title_principios {
             font-size: 25px;
+            margin: 1em 0;
         }
 
         p {
@@ -896,6 +1075,10 @@ strong a {
 
 .link {
     color: rgb(75, 75, 75);
+    text-decoration: underline !important;
+}
+.dark-mode .link{
+    color: #ffff;
     text-decoration: underline !important;
 }
 
