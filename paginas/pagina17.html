@@ -25,40 +25,44 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="background_green">
+<body>
 
     <header>
         <div class="header1">
+            <div>
+                <img class="logo_egp" src="../imgs/logoEGP2.png" alt="">
+                <img class="logo_egp_escuro" src="../imgs/logoEGP1.png" alt="">
+            </div>
             <div class="nome">
-                <h4>Cartilha EGPCE</h4>
-                <h2>Questão de Ética</h2>
+                <h4>Cartilhas</h4>
+                <h2>Escola de Gestão Pública</h2>
             </div>
             <div class="menu">
-                <a href="index.html"><i class="bi bi-house icone_white"></i>Início</a>
-                <a href="#"><i class="bi bi-book icone_white"></i>Cartilhas</a>
-                <a id="toggleBtn">
-                    <i id="icon" class="bi bi-sun-fill"></i> Mudar Tema
+                <a href="../index.html">
+                    <div href="../index.html" class="menu_item"><i class="bi bi-house icone_white"></i>Início</div>
                 </a>
+                <div href="#" class="menu_item dropdown"><i class="bi bi-book icone_white"></i>Cartilhas
+                    <div class="dropdown_item">
+                        <a href="#">Questão de Ética</a>
+                    </div>
+                </div>
+                <div id="toggleBtn" class="menu_item">
+                    <i id="icon" class="bi bi-sun-fill"></i> Mudar Tema
+                </div>
             </div>
         </div>
     </header>
 
-    <main class="main">
-        
-        <h1 class="margin_title">
-            <div class="container text-center">
-                <div class="row wow zoomIn">
-                    <div class="col">
-                        <p class="title_white title_white_green"><strong class="title_white" data-wow-duration="1">FORMAÇÃO E EDUCAÇÃO <br>
-                            ÉTICA CONTINUADA</strong><br>
-                        </p>
-                    </div>
-                    <div class="col">
-                        <img class="logo" src="../imgs/logoEGP1.png" alt="">
-                    </div>
-                </div>
-            </div>
+    <main class="main background_green">
+
+        <h1 class="titulo_branco">FORMAÇÃO E EDUCAÇÃO <br>
+            ÉTICA CONTINUADA
         </h1>
+
+        <!-- <div class="col">
+                        <img class="logo" src="../imgs/logoEGP1.png" alt="">
+                    </div> -->
+
 
         <div class="paragrafo17">
             <p class="p_white wow fadeInLeft">A Escola de Gestão Pública
@@ -71,7 +75,7 @@
                 desenvolvimento.</p>
         </div>
 
-        <div  class="img14 wow fadeInUp" >
+        <div class="img14 wow fadeInUp">
             <img class="img12" src="../imgs/Group 2.png" height="300px" width="auto" alt="">
         </div>
 
@@ -79,23 +83,23 @@
 
     <div class="center">
         <a href="pagina16.html">
-            <button type="button" class="button_white">
-                <i class="fa-solid fa-chevron-left icone_white"></i>Anterior
+            <button type="button" class="button">
+                <i class="fa-solid fa-chevron-left icone"></i>Anterior
             </button>
         </a>
         <a href="pagina18.html">
-            <button type="button" class="button_white">
-                Próximo <i class="fa-solid fa-chevron-right icone_white"></i>
+            <button type="button" class="button">
+                Próximo <i class="fa-solid fa-chevron-right icone"></i>
             </button>
         </a>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-crossorigin="anonymous"></script>
-<script>
-new WOW().init();
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
