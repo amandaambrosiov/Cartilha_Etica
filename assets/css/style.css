@@ -18,7 +18,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* BACKGROUND DAS PAGINAS VERDES */
+/* BACKGROUND DAS PAGINAS */
 .background_green {
     background-color: #5db12f;
 }
@@ -106,7 +106,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bi-sun-fill {
-    background: #363636;
+    background: #26a737;
     border: none;
     color: white;
     font-size: 20px;
@@ -141,13 +141,10 @@ header {
 .header1 {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     width: 100%;
-    /* padding: 10px; */
     height: 85px;
-    /* position: fixed; */
 }
 
 .page_header {
-    /* background-color: #0000002a; */
     width: 100%;
     padding: 5px;
     display: flex;
@@ -172,8 +169,6 @@ header {
     color: #26a737;
     font-size: 25px;
     margin-top: -20px;
-    filter: drop-shadow(1px 1px 2px rgba(20, 20, 20, 0.356));
-    /* margin-left: 2rem; */
 }
 
 /* TITULOS DO HEADER  */
@@ -210,8 +205,8 @@ header {
 /* IMAGEM DA CAPA  */
 .capa {
     filter: drop-shadow(5px 5px 10px grey);
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 300px;
     transition: 0.5s;
 }
 
@@ -225,7 +220,7 @@ header {
 
 .footer_index {
     color: #26a737;
-    font-size: 25px;
+    font-size: 30px;
     /* font-weight: bold; */
     margin-top: 20px;
     margin-bottom: 2rem;
@@ -280,7 +275,7 @@ header {
 }
 
 .section {
-    margin: 2rem 3rem;
+    margin: 1em;
 }
 
 
@@ -288,12 +283,11 @@ header {
 .texto {
     font-size: 19px;
     max-width: 920px;
-    /* text-align: justify; */
+}
+.texto a{
+    color: #26a737;
 }
 
-.titulo {
-    margin-top: 20px;
-}
 
 .side_box {
     /* background-color: rgb(245, 245, 245); */
@@ -311,16 +305,16 @@ header {
     color: #26a737;
     font-size: 40px;
     font-weight: 700;
-    margin-top: 5rem;
-    margin-bottom: 40px;
+    /* margin-top: 2em; */
+    margin: 1em 0;
 }
 
 .side_box .index_title {
     color: #26a737;
     font-size: 40px;
     font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 40px;
+    /* margin-top: 0; */
+    /* margin-bottom: 40px; */
 }
 
 .subtopico {
@@ -328,7 +322,7 @@ header {
     transition: color 0.2s;
     cursor: pointer;
     font-weight: 500;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-size: 30px;
     margin: 0.5rem 0;
 }
@@ -348,10 +342,12 @@ h4 {
 
 /* CONTEUDO PRINCIPAL  */
 .main {
-    margin: 2rem 4rem;
     padding-top: 20px;
+    padding-right: 20px;
     margin-bottom: 1rem;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    margin: 2rem auto;
+    width: 75%;
 }
 
 ul {
@@ -380,9 +376,9 @@ ul li {
 
 /* INÍCIO */
 
-.topicos {
+/* .topicos {
     margin: 3rem 0;
-}
+} */
 
 /* IMAGENS */
 .logo_egp {
@@ -411,7 +407,7 @@ ul li {
     display: none;
 }
 
-/* TITULO */
+/* TITULO pagina inicial*/
 .title {
     color: #26a737;
     font-size: 4rem;
@@ -440,41 +436,17 @@ ul li {
     margin-bottom: 3rem;
 }
 
-
-
-/* TITULO BRANCO  */
-.title_white {
-    color: #ffff;
-    /* padding-bottom: 30px; */
-    font-size: 30px;
-}
-
-.title_orange {
-    color: #e06a0c;
+/* TITULO das paginas */
+.titulo {
+    /* color: #ffff; */
+    font-size: 40px;
     display: flex;
     text-align: left;
-    font-size: 25px;
     font-weight: bolder;
-    /* margin: 3em 0 1em 2em; */
+    margin-left: 2rem;
 }
-
-/* MARGEM DE TODOS OS TITULOS  */
-.margin_title {
-    margin: 3rem 4rem;
-}
-
-/* TITULO OBJETIVOS PARA CENTRALIZAR  */
-
-.title_white_green {
-    margin: 0.2em 0;
-    display: flex;
-    text-align: left;
-}
-
-.title_white_orange {
-    margin: 0.6em 0;
-    display: flex;
-    text-align: left;
+.titulo_branco{
+    color: #ffff;
 }
 
 /* PARAGRAFO DA PAGINA DE OBJETIVOS  */
@@ -487,14 +459,6 @@ ul li {
     font-weight: light;
 }
 
-/* TITULO DA PAGINA DE PRINCIPIOS */
-.title_principios {
-    display: flex;
-    text-align: left;
-    /* font-size: 50px; */
-    font-weight: bolder;
-    margin: 2rem 0 0 2em;
-}
 
 /* IMAGENS DA PAGINA DE PRINCIPIOS */
 .img_principios {
@@ -671,6 +635,7 @@ ul li {
     max-width: 60%;
     display: flex;
     text-align: left;
+    padding-left: 15px;
 
 }
 
@@ -715,7 +680,7 @@ ul li {
 }
 
 .img14 {
-    margin-top: -7em;
+    margin-top: -4em;
     display: flex;
     justify-content: flex-end;
 }
@@ -936,7 +901,7 @@ strong a {
 
         .main {
             box-shadow: none;
-            margin: 10px 30px;
+            /* margin: 10px 30px; */
             padding: 0;
         }
 
@@ -1049,7 +1014,7 @@ strong a {
         }
 
         .img12 {
-            width: 100%;
+            width:80%;
             height: auto;
         }
 
