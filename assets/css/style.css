@@ -96,6 +96,10 @@ body::-webkit-scrollbar-thumb {
     display: block;
 }
 
+.logo_egp_index{
+    float: left;
+}
+
 #toggleBtn {
     background: none;
     border: none;
