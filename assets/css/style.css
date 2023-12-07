@@ -22,6 +22,9 @@ body {
 .background_green {
     background-color: #5db12f;
 }
+.background_green_body{
+    background-color: #e6e6e6;
+}
 
 .background_orange {
     background-color: #e06a0c;
@@ -210,7 +213,7 @@ header {
 .capa {
     filter: drop-shadow(5px 5px 10px grey);
     height: auto;
-    width: 300px;
+    width: 200px;
     transition: 0.5s;
 }
 
@@ -310,7 +313,8 @@ header {
     font-size: 40px;
     font-weight: 700;
     /* margin-top: 2em; */
-    margin: 1em 0;
+    /* margin: 1em 0; */
+    margin-bottom: 0.5em;
 }
 
 .side_box .index_title {
@@ -322,21 +326,20 @@ header {
 }
 
 .subtopico {
-    color: #26a737;
+    color: #333;
     transition: color 0.2s;
     cursor: pointer;
     font-weight: 500;
     /* text-decoration: underline; */
-    font-size: 30px;
+    font-size: 25px;
     margin: 0.5rem 0;
+}
+.dark-mode .subtopico{
+    color: #ffff;
 }
 
 h4 {
     margin-bottom: 20px !important;
-}
-
-.subtopico:hover {
-    color: #14581d;
 }
 
 .icone_mouse {
