@@ -33,7 +33,7 @@
                 <img class="logo_egp logo_egp_index" src="imgs/logoEGP2.png" alt="">
                 <img class="logo_egp_escuro logo_egp_index" src="imgs/logoEGP1.png" alt="">
             </div>
-            <div class="nome">
+            <div class="titulo_header">
                 <h4>EGPCE</h4>
                 <h2>CARTILHAS</h2>
             </div>
@@ -42,10 +42,10 @@
                 <a href="#"><i class="bi bi-book icone_white"></i>Acesso ao documento</a>
                 <a href="#outros_formatos"><i class="bi bi-filetype-pdf icone_white"></i>Outros formatos</a>
             </div>
-                <button id="toggleBtn" class="index_btn">
-                    <i id="icon" class="bi bi-sun-fill"></i>
-                </button>
-            </div>
+            <button id="toggleBtn" class="index_btn">
+                <i id="icon" class="bi bi-sun-fill"></i>
+            </button>
+        </div>
         </div>
     </header>
 
@@ -71,9 +71,11 @@
             </p>
             <br>
             <br>
+            <br>
 
 
-            <h2 class="index_title wow zoomIn" data-wow-delay="0.1s">Principais tópicos abordados <br> na cartilha</h2>
+            <h2 class="index_title wow zoomIn" data-wow-delay="0.1s">Principais tópicos abordados na <br> cartilha
+                Questão de Ética</h2>
             <div class="topicos" id="topicos">
 
                 <div class="subtopico wow bounceInLeft" data-wow-delay="0.1s">Objetivos</div>
@@ -91,41 +93,23 @@
 
             <!-- <img class="img_site wow zoomIn" src="imgs/Group 2.png" alt=""> -->
 
-            <div class="wow zoomIn">
-                <h2 class="index_title" id="outros_formatos">Acesse outros formatos</h2>
-        
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col">
-                            <a href="cartilhapdf/Questao-de-Etica_atualizada-5.pdf" target="_blank" rel="noopener noreferrer">
-                                <img class="capa" src="imgs/capa.png" alt="">
-                                <footer class="footer_index"><i class="fa-regular fa-file-pdf icone_capa"></i>Cartilha
-                                    em
-                                    PDF</footer>
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a href="paginas/pagina01.html" target="_blank" rel="noopener noreferrer">
-                                <img class="capa" src="imgs/capa.png" alt="">
-                                <footer class="footer_index"><i class="fa-regular fa-file icone_capa"></i>Cartilha
-                                    animada
-                                </footer>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
+
+
         </section>
         <aside>
             <div class="side_box wow zoomIn">
 
                 <div class="banner">
-                    <img src="imgs/Group 1.png" width="250" height="auto" alt="">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                        type="module"></script>
+                    <dotlottie-player src="https://lottie.host/a5e85061-54d9-4d28-a431-6139b84cf2c7/KhuJ4hd9fm.json"
+                        background="transparent" speed="1" style="width: 300px; height: auto;" loop
+                        autoplay></dotlottie-player>
                     <h5 class="banner_title"> Cartilha de Ética <br>
                         para Servidores EGPCE: </strong><br>
                         Construindo Relações Positivas!</h5>
-                    <footer>Acesse documento completo: <a class="link"
+                        <p>Esta cartilha é um guia essencial para todos os membros da nossa comunidade escolar. Juntos, moldamos um ambiente educacional baseado em valores éticos sólidos.</p>
+                    <footer><strong> Acesse documento completo: </strong><a class="link"
                             href="https://www.egp.ce.gov.br/wp-content/uploads/sites/8/2023/10/Codigo-de-Etica-e-Disciplina-da-EGPCE.pdf"
                             target="_blank" rel="noopener noreferrer">Código de Ética e Disciplina da EGPCE</a></footer>
                 </div>
@@ -133,7 +117,34 @@
 
         </aside>
 
+
+
     </main>
+
+    <div class="wow zoomIn outros_formatos">
+        <h2 class="index_title center m-5" id="outros_formatos">Acesse outros formatos</h2>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <a href="cartilhapdf/Questao-de-Etica_atualizada-5.pdf" target="_blank" rel="noopener noreferrer">
+                        <img class="capa" src="imgs/capa.png" alt="">
+                        <footer class="footer_index"><i class="fa-regular fa-file-pdf icone_capa"></i>Cartilha
+                            em
+                            PDF</footer>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="paginas/pagina01.html" target="_blank" rel="noopener noreferrer">
+                        <img class="capa" src="imgs/capa.png" alt="">
+                        <footer class="footer_index"><i class="fa-regular fa-file icone_capa"></i>Cartilha
+                            animada
+                        </footer>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -141,13 +152,17 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col">
-
-                    <h5 class="footer_title">OUVIDORIA</h5>
-                    <a class="link center" href="https://www.egp.ce.gov.br/ouvidoria/" target="_blank"
-                        rel="noopener noreferrer">
-                        https://www.egp.ce.gov.br/ouvidoria/</a>
-                    <a class="link center">Pelo e-mail: ouvidoria@egp.ce.gov.br</a>
-                    <a class="link center">Pelo telefone: (85) 3101.3844</a>
+                    <a href="https://www.egp.ce.gov.br/" target="_blank" rel="noopener noreferrer">EGP.CE.GOV.BR</a>
+                </div>
+                <div class="col">
+                    <p>CONTATO <br>
+                    (85) 3101-3844</p>
+                </div>
+                <div class="col">
+                    <p>SEDE DA EGPCE 
+                        AV. GENERAL AFONSO ALBUQUERQUE LIMA, S/N - CAMBEBA 
+                        FORTALEZA, CE. 
+                        CEP: 60.822-325.</p>
                 </div>
             </div>
         </div>

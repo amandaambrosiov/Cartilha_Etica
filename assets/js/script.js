@@ -1,3 +1,28 @@
+// Quando a página é carregada
+window.onload = function () {
+    // Adiciona um ouvinte de evento para o scroll
+    window.addEventListener('scroll', scrollFunction);
+  };
+  
+  // Função para verificar a posição do scroll
+  function scrollFunction() {
+    var scrollBtn = document.getElementById('myBtn');
+  
+    // Se a posição do scroll for maior que 300 pixels, mostra o botão, caso contrário, oculta
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      scrollBtn.style.display = 'block';
+    } else {
+      scrollBtn.style.display = 'none';
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const toggleBtn = document.getElementById('toggleBtn');
     const icon = document.getElementById('icon');
@@ -28,3 +53,5 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
