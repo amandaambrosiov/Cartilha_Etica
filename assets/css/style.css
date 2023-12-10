@@ -38,21 +38,27 @@ body::-webkit-scrollbar-thumb {
 .background_green {
     background-color: #5db12f;
 }
-.dark-mode .background_green{
-background-color: #333;
+
+.dark-mode .background_green {
+    background-color: #333;
 }
+
 .background_green_body {
     background-color: #e8ffdc;
 }
+
 .background_orange {
     background-color: #e06a0c;
 }
+
 .background_orange_body {
     background-color: #ffeada;
 }
-.dark-mode .background_orange{
+
+.dark-mode .background_orange {
     background-color: #333;
-    }
+}
+
 /* FIM BACKGROUND DAS PAGINAS */
 
 /* ############################################################ HEADER PAGINAS CARTILHA  ######################################################33*/
@@ -68,6 +74,7 @@ background-color: #333;
 .fa-arrow-left {
     transition: 0.3s;
 }
+
 .dark-mode .fa-arrow-left {
     color: white;
 }
@@ -78,9 +85,11 @@ background-color: #333;
     font-size: 18px;
     margin-top: 5px;
 }
+
 .dark-mode .page_title h4 {
     color: white;
 }
+
 .page_title h2 {
     font-weight: bold;
     color: #26a737;
@@ -91,7 +100,7 @@ background-color: #333;
 /* FIM TITULO DA PAGINA NA CARTILHA  */
 
 /* BOTAO DE VOLTAR PARA PAGINA INICIAL  */
-.btn_back{
+.btn_back {
     background-color: #26a737;
     padding: 5px 10px;
     border-radius: 20px;
@@ -101,14 +110,16 @@ background-color: #333;
     margin-left: 8px;
 }
 
-.btn_back i{
+.btn_back i {
     color: white;
     margin-right: 4px;
     transition: 0.3s;
 }
-.btn_back:hover>i{
+
+.btn_back:hover>i {
     transform: translate(-2px);
 }
+
 /*  FIM BOTAO DE VOLTAR PARA PAGINA INICIAL  */
 
 /*###################################################### FIM DO HEADER PAGINAS CARTILHA  #############################################################*/
@@ -159,16 +170,18 @@ background-color: #333;
 .col a {
     text-decoration: none;
 }
+
 /* CLASSE PARA CENTRALIZAR OS DEMAIS CONTEUDOS   */
 .center {
     display: flex;
     justify-content: center;
-} 
+}
 
 h4 {
     margin-bottom: 20px !important;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
@@ -221,6 +234,7 @@ header {
     right: 10px;
     z-index: 99;
 }
+
 /* TITULO DO HEADER INDEX  */
 
 .titulo_header {
@@ -242,6 +256,7 @@ header {
     font-size: 25px;
     margin-top: -20px;
 }
+
 /*#################################### FIM DO HEADER DO INDEX  ###############################################3*/
 
 
@@ -257,7 +272,8 @@ header {
     width: 65%;
     min-height: 500px;
 }
-.main_05{
+
+.main_05 {
     padding-top: 20px;
     margin-bottom: 1rem;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
@@ -280,9 +296,11 @@ ul li {
     text-align: left;
     font-size: 20px;
 }
+
 .section {
     margin: 1em;
 }
+
 .img_index {
     display: flex;
     justify-content: center;
@@ -321,6 +339,7 @@ ul li {
     font-size: 40px;
     font-weight: 700;
 }
+
 .banner_title {
     font-size: 30px;
     margin-top: 15px;
@@ -352,19 +371,24 @@ ul li {
     margin-bottom: 2rem;
     transition: 0.4s;
 }
+
 .footer_index:hover {
     transform: scale(1.1);
 }
+
 .icone_capa {
     color: #26a737;
     margin-right: 10px;
 }
+
 .footer_title {
     font-size: 16px;
 }
+
 .footer_list {
     font-size: 12px;
 }
+
 .icone_footer {
     background-color: #26a737;
     margin: 0.1rem;
@@ -374,6 +398,7 @@ ul li {
     transition: 0.4s;
     margin-bottom: 1rem;
 }
+
 .icone_footer:hover {
     transform: scale(1.2);
 }
@@ -390,6 +415,7 @@ ul li {
     filter: drop-shadow(5px 5px 10px rgb(20, 20, 20));
 
 }
+
 /* FIM DA IMAGEM DA CAPA  */
 
 /* ################################ OUTROS FORMATOS ########################################  */
@@ -431,6 +457,7 @@ ul li {
     padding-bottom: 30px;
     color: rgb(75, 75, 75);
 }
+
 .dark-mode .description {
     color: white;
 }
@@ -438,6 +465,7 @@ ul li {
 .outros_formatos {
     margin-bottom: 3rem;
 }
+
 /* TITULO DA SEGUNDA PAGINA  */
 .subtitle {
     color: #26a737;
@@ -686,6 +714,7 @@ ul li {
     margin-bottom: -50px;
     font-size: 30px;
 }
+
 /* FIM ESTILO LISTA  */
 
 /* IMAGENS DA CARTILHA  */
@@ -704,6 +733,7 @@ ul li {
     justify-content: center;
     padding-bottom: 30px;
 }
+
 /* FIM DAS IMAGENS DA CARTILHA  */
 
 /* ESTILO ULTIMA PAGINA DA CARTILHA  */
@@ -714,6 +744,7 @@ ul li {
     background-color: #ffff;
     z-index: 999;
 }
+
 .dark-mode .titulo_orange {
     background-color: #333;
 }
@@ -738,6 +769,7 @@ ul li {
 .txt20 a {
     color: rgb(75, 75, 75);
 }
+
 .dark-mode .txt20 a {
     color: white;
 }
@@ -785,6 +817,7 @@ strong a {
 .back_to_top i:hover {
     transform: translateY(-5px);
 }
+
 /* FIM DO BOTAO BACK TO TOP  */
 
 /* RESPONSIVIDADE PARA COMPUTADOR */
@@ -792,6 +825,7 @@ strong a {
 @media screen {
 
     @media (min-width:700px) {
+
         /* MENU PARA COMPUTADOR  */
         .menu {
             background-color: #26a737;
@@ -834,10 +868,12 @@ strong a {
         .icone_white {
             color: #ffff;
         }
+
         /* FIM DO MENU  */
     }
 
     @media (min-width:500px) {
+
         /* ADAPTA PARA CELULAR  */
         .cartilha {
             filter: drop-shadow(10px 10px 4px grey);
@@ -877,6 +913,12 @@ strong a {
         margin-top: 2rem;
     }
 
+    .wrap {
+        display: grid;
+        grid-template-columns: 30% 30% 40%;
+        margin: 0 2rem;
+    }
+
 }
 
 /* RESPONSIVIDADE PARA CELULAR */
@@ -884,6 +926,7 @@ strong a {
 @media screen {
 
     @media (max-width:860px) {
+
         /* HEADER RESPONSIVO  */
         .header1 {
             box-shadow: none;
@@ -891,6 +934,7 @@ strong a {
             margin-bottom: 4rem;
             height: 85px;
         }
+
         /* BOTAO MODO ESCURO MENOR PARA CELULAR  */
         #toggleBtn {
             background: none;
@@ -900,13 +944,13 @@ strong a {
             margin-top: 8px;
             margin-right: 20px;
         }
-        
+
         .bi-sun-fill {
             font-size: 15px;
             padding: 8px 12px;
             border-radius: 50%;
         }
-        
+
         .bi-moon-stars-fill {
             font-size: 15px;
             padding: 8px 12px;
@@ -917,12 +961,13 @@ strong a {
         .page_title h4 {
             font-size: 15px;
         }
+
         .page_title h2 {
             font-size: 22px;
         }
 
         /* BOTAO DE VOLTAR PARA O INICIO MENOR  */
-        .btn_back{
+        .btn_back {
             font-size: 15px;
         }
 
@@ -970,6 +1015,12 @@ strong a {
     }
 
     @media (max-width:1000px) {
+        .wrap .footerlist {
+            margin: 1rem;
+            padding-left: 10px;
+            border-left: 5px solid #26a737;
+        }
+
         .img_site {
             height: auto;
             width: 200px;
@@ -997,6 +1048,7 @@ strong a {
             height: auto;
             margin: 3em 0 0 0;
         }
+
         .title {
             font-size: 2em;
         }
