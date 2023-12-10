@@ -8,7 +8,7 @@ window.onload = function () {
   function scrollFunction() {
     var scrollBtn = document.getElementById('myBtn');
   
-    // Se a posição do scroll for maior que 300 pixels, mostra o botão, caso contrário, oculta
+    // Se a posição do scroll for maior que 200 pixels, mostra o botão, caso contrário, oculta
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
       scrollBtn.style.display = 'block';
     } else {
@@ -16,10 +16,9 @@ window.onload = function () {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; // Para Safari
+  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE and Opera
 }
 
 

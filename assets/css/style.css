@@ -15,20 +15,7 @@ body {
     margin: 0;
     max-width: 100%;
     padding: 0;
-    transition: background-color 0.3s ease;
-}
-
-/* BACKGROUND DAS PAGINAS */
-.background_green {
-    background-color: #5db12f;
-}
-
-.background_green_body {
-    background-color: #e6e6e6;
-}
-
-.background_orange {
-    background-color: #e06a0c;
+    transition: 0.3s ease;
 }
 
 /* BARRA DE SCROLL DO SITE  */
@@ -46,44 +33,87 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* FIM DA BARRA DE SCROLL  */
+
+/* BACKGROUND DAS PAGINAS */
+.background_green {
+    background-color: #5db12f;
+}
+.dark-mode .background_green{
+background-color: #333;
+}
+.background_green_body {
+    background-color: #e8ffdc;
+}
+.background_orange {
+    background-color: #e06a0c;
+}
+.background_orange_body {
+    background-color: #ffeada;
+}
+.dark-mode .background_orange{
+    background-color: #333;
+    }
+/* FIM BACKGROUND DAS PAGINAS */
+
+/* ############################################################ HEADER PAGINAS CARTILHA  ######################################################33*/
+
+.page_header {
+    width: 100%;
+    padding: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
 .fa-arrow-left {
     transition: 0.3s;
 }
-
-.fa-arrow-left:hover {
-    transform: translate(-8px);
-}
-
-.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-.dark-mode * {
-    /* background-color: #333; */
-    color: #fff;
-}
-
-.dark-mode .titulo_orange {
-    background-color: #333;
-}
-
-.dark-mode .txt20 a {
-    color: white;
-}
-
-.dark-mode .page_title h4 {
-    color: white;
-}
-
 .dark-mode .fa-arrow-left {
     color: white;
 }
 
-.dark-mode .description {
+/* TITULO DA PAGINA NA CARTILHA  */
+.page_title h4 {
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.dark-mode .page_title h4 {
     color: white;
 }
+.page_title h2 {
+    font-weight: bold;
+    color: #26a737;
+    font-size: 25px;
+    margin-top: -20px;
+}
 
+/* FIM TITULO DA PAGINA NA CARTILHA  */
+
+/* BOTAO DE VOLTAR PARA PAGINA INICIAL  */
+.btn_back{
+    background-color: #26a737;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+.btn_back i{
+    color: white;
+    margin-right: 4px;
+    transition: 0.3s;
+}
+.btn_back:hover>i{
+    transform: translate(-2px);
+}
+/*  FIM BOTAO DE VOLTAR PARA PAGINA INICIAL  */
+
+/*###################################################### FIM DO HEADER PAGINAS CARTILHA  #############################################################*/
+
+/* BOTAO MODO ESCURO  */
 
 #toggleBtn {
     background: none;
@@ -105,22 +135,46 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bi-moon-stars-fill {
-
     background: white;
     border: none;
-    color: #333;
+    color: #333 !important;
     font-size: 20px;
     padding: 8px 15px;
     border-radius: 50%;
     box-shadow: rgba(239, 239, 241, 0.25) 0px 13px 27px -5px, rgba(240, 238, 238, 0.3) 0px 8px 16px -8px;
 }
 
-/* ESTILOS PRINCIPAIS  */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode * {
+    color: #fff;
+}
+
+/*######################################## FIM BOTAO MODO ESCURO ################################# */
+
+/* ################################### ESTILOS PRINCIPAIS ############################################# */
 .col a {
     text-decoration: none;
 }
+/* CLASSE PARA CENTRALIZAR OS DEMAIS CONTEUDOS   */
+.center {
+    display: flex;
+    justify-content: center;
+} 
 
-/* HEADER DO INDEX  */
+h4 {
+    margin-bottom: 20px !important;
+}
+ul{
+    list-style: none;
+}
+
+/* ################################# FIM DOS ESTILOS PRINCIPAIS ###################################### */
+
+/*############################################ HEADER DO INDEX  ###############################################3*/
 header {
     margin: 0;
     padding: 0;
@@ -133,66 +187,33 @@ header {
     height: 85px;
 }
 
-.page_header {
-    width: 100%;
-    padding: 5px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-.btn_back{
-    background-color: #26a737;
-    padding: 5px 10px;
-    border-radius: 20px;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    margin-left: 8px;
+/* LOGO EGP  */
+.dark-mode .logo_egp {
+    display: none;
 }
 
-.btn_back i{
-    color: white;
-    margin-right: 4px;
-    transition: 0.3s;
-}
-.btn_back:hover>i{
-    transform: translate(-2px);
+.dark-mode .logo_egp_escuro {
+    display: block;
 }
 
-.page_title h4 {
-    font-weight: 300;
-    font-size: 18px;
-    margin-top: 5px;
-}
 
-.page_title h2 {
-    font-weight: bold;
-    color: #26a737;
-    font-size: 25px;
-    margin-top: -20px;
-}
-
-/* TITULOS DO HEADER  */
-
-.nome {
+.logo_egp_index {
     float: left;
-    padding: 10px;
-    margin-top: 5px;
 }
 
-.nome h4 {
-    font-weight: 300;
-    font-size: 18px;
+.logo_egp {
+    height: 70px;
     margin-left: 2rem;
+    margin-top: 6px;
 }
 
-.nome h2 {
-    font-weight: bold;
-    color: #26a737;
-    font-size: 25px;
-    margin-top: -20px;
-    margin-left: 2rem;
+.logo_egp_escuro {
+    height: 73px;
+    margin-left: 2.1rem;
+    display: none;
 }
+
+/* FIM LOGO EGP  */
 
 .index_btn {
     position: fixed;
@@ -200,64 +221,49 @@ header {
     right: 10px;
     z-index: 99;
 }
+/* TITULO DO HEADER INDEX  */
 
-/* INICIO DO CONTEUDO PRINCIPAL  */
-
-/* IMAGEM DA CAPA  */
-.capa {
-    filter: drop-shadow(5px 5px 10px grey);
-    height: auto;
-    width: 200px;
-    transition: 0.5s;
+.titulo_header {
+    float: left;
+    padding-left: 10px;
+    margin: 10px;
+    border-left: 4px solid #26a737;
 }
 
-.dark-mode .capa {
-    filter: drop-shadow(5px 5px 10px rgb(20, 20, 20));
-
+.titulo_header h4 {
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 8px;
 }
 
-
-/* FOOTER DOS LINKS PARA CARTILHA  */
-
-.footer_index {
+.titulo_header h2 {
+    font-weight: bold;
     color: #26a737;
-    font-size: 30px;
-    /* font-weight: bold; */
-    margin-top: 20px;
-    margin-bottom: 2rem;
-    transition: 0.4s;
+    font-size: 25px;
+    margin-top: -20px;
 }
+/*#################################### FIM DO HEADER DO INDEX  ###############################################3*/
 
-.footer_index:hover {
-    transform: scale(1.1);
-}
 
-/* ICONES DO LINK PRA CARTILHA  */
-.icone_capa {
-    color: #26a737;
-    margin-right: 10px;
-}
+/* TITULOS DO HEADER PAGINA PRINCIPAL */
 
-.footer_title {
-    font-size: 16px;
-}
-
-.footer_list {
-    font-size: 12px;
-}
-
-.icone_footer {
-    background-color: #26a737;
-    margin: 0.1rem;
-    padding: 10px;
-    border-radius: 8px;
-    color: #ffff;
-    transition: 0.4s;
+/* ############################ INICIO DO CONTEUDO PRINCIPAL ############################################### */
+.main {
+    padding-top: 20px;
+    padding-right: 20px;
     margin-bottom: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    margin: 2rem auto;
+    width: 65%;
+    min-height: 500px;
 }
-
-.icone_footer:hover {
-    transform: scale(1.2);
+.main_05{
+    padding-top: 20px;
+    margin-bottom: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    margin: 2rem auto;
+    width: 75%;
+    min-height: 500px;
 }
 
 .cartilha {
@@ -269,17 +275,18 @@ header {
     filter: drop-shadow(10px 10px 4px rgb(19, 19, 19));
 }
 
-
+ul li {
+    display: flex;
+    text-align: left;
+    font-size: 20px;
+}
+.section {
+    margin: 1em;
+}
 .img_index {
     display: flex;
     justify-content: center;
 }
-
-.section {
-    margin: 1em;
-}
-
-
 
 .texto {
     font-size: 19px;
@@ -292,7 +299,6 @@ header {
 
 
 .side_box {
-    /* background-color: rgb(245, 245, 245); */
     box-shadow: rgba(149, 157, 165, 0.39) 0px 8px 24px;
     margin: 1rem 1rem;
     padding: 30px 20px;
@@ -307,8 +313,6 @@ header {
     color: #26a737;
     font-size: 40px;
     font-weight: 700;
-    /* margin-top: 2em; */
-    /* margin: 1em 0; */
     margin-bottom: 0.5em;
 }
 
@@ -316,8 +320,10 @@ header {
     color: #26a737;
     font-size: 40px;
     font-weight: 700;
-    /* margin-top: 0; */
-    /* margin-bottom: 40px; */
+}
+.banner_title {
+    font-size: 30px;
+    margin-top: 15px;
 }
 
 .subtopico {
@@ -325,7 +331,6 @@ header {
     transition: color 0.2s;
     cursor: auto;
     font-weight: 500;
-    /* text-decoration: underline; */
     font-size: 25px;
     margin: 0.5rem 0;
 }
@@ -334,35 +339,68 @@ header {
     color: #ffff;
 }
 
-h4 {
-    margin-bottom: 20px !important;
+
+/* ################################ OUTROS FORMATOS ########################################  */
+
+/* FOOTER DOS LINKS PARA CARTILHA  */
+
+.footer_index {
+    color: #26a737;
+    font-size: 30px;
+    /* font-weight: bold; */
+    margin-top: 20px;
+    margin-bottom: 2rem;
+    transition: 0.4s;
 }
+.footer_index:hover {
+    transform: scale(1.1);
+}
+.icone_capa {
+    color: #26a737;
+    margin-right: 10px;
+}
+.footer_title {
+    font-size: 16px;
+}
+.footer_list {
+    font-size: 12px;
+}
+.icone_footer {
+    background-color: #26a737;
+    margin: 0.1rem;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffff;
+    transition: 0.4s;
+    margin-bottom: 1rem;
+}
+.icone_footer:hover {
+    transform: scale(1.2);
+}
+
+/* IMAGEM DA CAPA  */
+.capa {
+    filter: drop-shadow(5px 5px 10px grey);
+    height: auto;
+    width: 200px;
+    transition: 0.5s;
+}
+
+.dark-mode .capa {
+    filter: drop-shadow(5px 5px 10px rgb(20, 20, 20));
+
+}
+/* FIM DA IMAGEM DA CAPA  */
+
+/* ################################ OUTROS FORMATOS ########################################  */
+
+/*############################################# ESTILO CARTILHA  ##################################################3*/
 
 .icone_mouse {
     color: #26a737;
     margin-left: 10px;
 }
 
-/* CONTEUDO PRINCIPAL  */
-.main {
-    padding-top: 20px;
-    padding-right: 20px;
-    margin-bottom: 1rem;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    margin: 2rem auto;
-    width: 75%;
-}
-
-ul {
-    list-style: none;
-
-}
-
-ul li {
-    display: flex;
-    text-align: left;
-    font-size: 20px;
-}
 
 .lista_apresentação li {
     font-size: 20px;
@@ -377,13 +415,6 @@ ul li {
 .Freepick {
     color: #4ba726;
 }
-
-/* INÍCIO */
-
-/* .topicos {
-    margin: 3rem 0;
-} */
-
 
 
 /* TITULO pagina inicial*/
@@ -400,13 +431,13 @@ ul li {
     padding-bottom: 30px;
     color: rgb(75, 75, 75);
 }
-
-/* CLASSE PARA CENTRALIZAR OS DEMAIS CONTEUDOS   */
-.center {
-    display: flex;
-    justify-content: center;
+.dark-mode .description {
+    color: white;
 }
 
+.outros_formatos {
+    margin-bottom: 3rem;
+}
 /* TITULO DA SEGUNDA PAGINA  */
 .subtitle {
     color: #26a737;
@@ -439,16 +470,13 @@ ul li {
     font-weight: light;
 }
 
-
 /* IMAGENS DA PAGINA DE PRINCIPIOS */
 .img_principios {
-    /* height: 80px; */
     margin-top: 0.5rem;
     float: right;
 }
 
 .img_principios_escuro {
-    /* height: 80px; */
     margin-top: 0.5rem;
     float: right;
 }
@@ -601,7 +629,6 @@ ul li {
 
 /* IMAGEM DE FUNDO DA PAGINA 03 E 04  */
 .background_img {
-    /* position: fixed; */
     margin-top: 4rem;
     left: 0;
     bottom: 0;
@@ -633,6 +660,7 @@ ul li {
     color: #26a737;
 }
 
+/* ESTILO LISTA  */
 .lista {
     margin: 2em 0 -1em 0;
     padding-bottom: 30px;
@@ -658,7 +686,9 @@ ul li {
     margin-bottom: -50px;
     font-size: 30px;
 }
+/* FIM ESTILO LISTA  */
 
+/* IMAGENS DA CARTILHA  */
 .img14 {
     margin-top: -4em;
     display: flex;
@@ -674,13 +704,18 @@ ul li {
     justify-content: center;
     padding-bottom: 30px;
 }
+/* FIM DAS IMAGENS DA CARTILHA  */
 
+/* ESTILO ULTIMA PAGINA DA CARTILHA  */
 .titulo_orange {
     color: #e94f0e;
     font-size: 20px;
     padding: 20px;
     background-color: #ffff;
     z-index: 999;
+}
+.dark-mode .titulo_orange {
+    background-color: #333;
 }
 
 .line_orange {
@@ -703,6 +738,11 @@ ul li {
 .txt20 a {
     color: rgb(75, 75, 75);
 }
+.dark-mode .txt20 a {
+    color: white;
+}
+
+/* FIM ESTILO ULTIMA PAGINA DA CARTILHA  */
 
 strong a {
     font-weight: lighter;
@@ -719,16 +759,40 @@ strong a {
     color: #ffff;
 }
 
-.banner_title {
-    font-size: 40px;
-    margin-top: 15px;
+/* BOTAO BACK TO TOP PAGINA 05 */
+
+.back_to_top {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #26a737;
+
+    padding: 7px 20px;
+    font-size: 30px;
+    border-radius: 50%;
 }
+
+.back_to_top i {
+    color: white;
+    transition: 0.3s linear;
+}
+
+.back_to_top i:hover {
+    transform: translateY(-5px);
+}
+/* FIM DO BOTAO BACK TO TOP  */
 
 /* RESPONSIVIDADE PARA COMPUTADOR */
 
 @media screen {
 
     @media (min-width:700px) {
+        /* MENU PARA COMPUTADOR  */
         .menu {
             background-color: #26a737;
             border-radius: 25px;
@@ -770,16 +834,17 @@ strong a {
         .icone_white {
             color: #ffff;
         }
+        /* FIM DO MENU  */
     }
 
     @media (min-width:500px) {
+        /* ADAPTA PARA CELULAR  */
         .cartilha {
             filter: drop-shadow(10px 10px 4px grey);
             height: 300px;
             width: auto;
             float: left;
             margin-right: 20px;
-            /* background-color: red; */
         }
     }
 }
@@ -792,7 +857,6 @@ strong a {
     .paragrafo17 {
         margin-left: 1em;
         margin-top: 2em;
-        /* max-width: 70%; */
     }
 
     .img_site {
@@ -813,33 +877,56 @@ strong a {
         margin-top: 2rem;
     }
 
-    .objetivos {
-        /* margin: 30px 0; */
-        display: flex;
-        text-align: left;
-    }
-
 }
-
-
-
 
 /* RESPONSIVIDADE PARA CELULAR */
 
 @media screen {
 
     @media (max-width:860px) {
+        /* HEADER RESPONSIVO  */
         .header1 {
             box-shadow: none;
             width: 100%;
             margin-bottom: 4rem;
-            /* padding: 10px; */
             height: 85px;
-            /* bottom: 20px;
-            position: fixed; */
+        }
+        /* BOTAO MODO ESCURO MENOR PARA CELULAR  */
+        #toggleBtn {
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+            margin-right: 20px;
+        }
+        
+        .bi-sun-fill {
+            font-size: 15px;
+            padding: 8px 12px;
+            border-radius: 50%;
+        }
+        
+        .bi-moon-stars-fill {
+            font-size: 15px;
+            padding: 8px 12px;
+            border-radius: 50%;
         }
 
-        /* MENU INDEX  */
+        /* TITULO DO HEADER MENOR PARA CELULAR  */
+        .page_title h4 {
+            font-size: 15px;
+        }
+        .page_title h2 {
+            font-size: 22px;
+        }
+
+        /* BOTAO DE VOLTAR PARA O INICIO MENOR  */
+        .btn_back{
+            font-size: 15px;
+        }
+
+        /* MENU INDEX PARA CELULAR*/
 
         .menu {
             background-color: #26a737;
@@ -898,7 +985,6 @@ strong a {
 
         .main {
             box-shadow: none;
-            /* margin: 10px 30px; */
             padding: 0;
         }
 
@@ -911,9 +997,6 @@ strong a {
             height: auto;
             margin: 3em 0 0 0;
         }
-
-
-
         .title {
             font-size: 2em;
         }
@@ -933,11 +1016,6 @@ strong a {
 
         .title_orange {
             margin: 10px 0 10px 2px !important;
-        }
-
-        .logo {
-            margin-top: 10px;
-            height: 70px;
         }
 
         .background_img {
@@ -1035,7 +1113,7 @@ strong a {
     }
 }
 
-/* FOOTER PRINCIPAL  */
+/* FOOTER PAGINA PRINCIPAL  */
 
 .footer {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -1070,104 +1148,37 @@ strong a {
 
 /* LOGO EGP E SEPLAG  */
 
-.dark-mode .logo_egp {
+.logo_egp_page {
+    height: 125px;
+    width: auto;
+}
+
+.logo_egp_page_escuro {
     display: none;
-}
-
-.dark-mode .logo_egp_escuro {
-    display: block;
-}
-
-.dark-mode .logo_seplag {
-    display: none;
-}
-
-.dark-mode .logo_seplag_escuro {
-    display: block;
-}
-
-.logo_egp_index {
-    float: left;
-}
-
-.logo_egp {
-    height: 70px;
-    margin-left: 2rem;
-}
-
-.logo_seplag {
+    margin-top: 33.5px;
+    margin-right: 5px;
+    margin-bottom: 42px;
     height: 50px;
+    width: auto;
 }
 
+.logo_seplag_page_escuro {
+    display: none;
+    width: auto;
+    height: 61px;
+    margin-top: 31px;
+    margin-left: 25px;
+}
 
-.logo_egp_escuro {
-    height: 73px;
-    margin-top: -6px;
-    margin-left: 2.1rem;
+.dark-mode .logo_seplag_page_escuro {
+    display: block;
+}
+
+.dark-mode .logo_egp_page {
     display: none;
 }
 
-.logo_seplag {
-    /* width: auto; */
-    height: 80px;
-    /* margin-left: 1rem; */
-}
 
-.logo_seplag_escuro {
-    /* width: auto; */
-    /* height: 60px; */
-    /* margin-left: 1rem; */
-    display: none;
-}
-
-/* TITULO DO HEADER INDEX  */
-
-.titulo_header {
-    float: left;
-    padding-left: 10px;
-    margin: 10px;
-    border-left: 4px solid #26a737;
-}
-
-.titulo_header h4 {
-    font-weight: 300;
-    font-size: 18px;
-    margin-top: 8px;
-}
-
-.titulo_header h2 {
-    font-weight: bold;
-    color: #26a737;
-    font-size: 25px;
-    margin-top: -20px;
-    /* margin-left: 2rem; */
-}
-
-.back_to_top {
-    display: none;
-    position: fixed;
-    z-index: 99;
-    bottom: 20px;
-    right: 30px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: #26a737;
-
-    padding: 7px 20px;
-    font-size: 30px;
-    border-radius: 50%;
-}
-
-.back_to_top i {
-    color: white;
-    transition: 0.3s linear;
-}
-
-.back_to_top i:hover {
-    transform: translateY(-5px);
-}
-
-.outros_formatos {
-    margin-bottom: 3rem;
+.dark-mode .logo_egp_page_escuro {
+    display: block;
 }
