@@ -269,8 +269,8 @@ header {
     margin-bottom: 1rem;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     margin: 2rem auto;
-    width: 65%;
-    min-height: 500px;
+    width: 50%;
+    min-height: 700px;
 }
 
 .main_05 {
@@ -278,9 +278,10 @@ header {
     margin-bottom: 1rem;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     margin: 2rem auto;
-    width: 75%;
-    min-height: 500px;
+    width: 50%;
+    min-height: 700px;
 }
+
 
 .cartilha {
     filter: drop-shadow(10px 10px 4px grey);
@@ -304,6 +305,8 @@ ul li {
 .img_index {
     display: flex;
     justify-content: center;
+    width: 90%;
+    height: auto;
 }
 
 .texto {
@@ -469,19 +472,18 @@ ul li {
 /* TITULO DA SEGUNDA PAGINA  */
 .subtitle {
     color: #26a737;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 3rem;
+    margin: 2rem;
 }
 
 /* TITULO das paginas */
 .titulo {
-    /* color: #ffff; */
-    font-size: 40px;
+    font-size: 3rem;
     display: flex;
     text-align: left;
     font-weight: bolder;
-    margin-left: 2rem;
+    margin: 1em;
 }
 
 .titulo_branco {
@@ -925,6 +927,21 @@ strong a {
 
 @media screen {
 
+    @media (max-width:700px) {
+        .main {
+            box-shadow: none;
+            padding: 0;
+            margin: 1em auto;
+            background: none;
+        }
+        .background_green_body{
+            background: none;
+        }
+        .titulo{
+            margin: 0;
+        }
+    }
+
     @media (max-width:860px) {
 
         /* HEADER RESPONSIVO  */
@@ -1032,11 +1049,6 @@ strong a {
 
         .img_back {
             display: none;
-        }
-
-        .main {
-            box-shadow: none;
-            padding: 0;
         }
 
         .cartilha {
