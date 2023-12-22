@@ -7,8 +7,8 @@
 
     <!-- CDN WOW JS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <!-- STYLE ANIMATE -->
-    <link rel="stylesheet" href="../assets/css/animate.css">
+    <!-- CDN ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <!-- JS  -->
@@ -31,10 +31,14 @@
 
 <body class="background_green_body">
 
+    <button onclick="topFunction()" class="back_to_top back_to_top_responsive" id="myBtn" title="Go to top"><i
+            class="fa-solid fa-arrow-up"></i></button>
+
     <header class="page_header">
-        <div>
-            <a href="../index.html" class="btn_back"><i class="fa-solid fa-arrow-left"></i> Início</a>
-        </div>
+        <a href="../index.html">
+            <img class="logo_egp_pagina " src="../imgs/logoEGP2.png" alt="">
+            <img class="logo_egp_escuro_pagina " src="../imgs/logoEGP1.png" alt="">
+        </a>
         <div class="page_title">
             <h4 class="center">Cartilha EGPCE</h4>
             <h2 class="center">Questão de Ética</h2>
@@ -46,19 +50,20 @@
         </div>
     </header>
 
-    <main class="main background_green wow zoomIn">
-        <h1 class="titulo titulo_branco wow zoomIn">
-            Objetivo
-        </h1>
-
+    <main class="main background_green">
         <div class="wrapper">
-
             <div>
-                <img class="img_back wow fadeInUp" width="auto" height="300" src="../imgs/figura3.png" alt="">
+                <img class="img_back img_04 wow zoomIn" width="auto" height="400" src="../imgs/figura03.png" alt="">
+    
+                <img class="responsive_img wow fadeInUp" width="auto" height="300" src="../imgs/Group 11.png" alt="">
             </div>
 
             <div>
-                <p class="paragrafo wow slideInLeft" data-wow-delay="1">O Código de Ética e Disciplina da Escola de
+                <h1 class="titulo titulo_branco wow fadeInDown">
+                    Objetivo
+                </h1>
+
+                <p class="paragrafo wow fadeInDown" data-wow-delay="0.4s">O Código de Ética e Disciplina da Escola de
                     Gestão
                     Pública do Estado do Ceará tem por objetivo indicar os
                     princípios, valores e normas que devem orientar os seus
@@ -66,12 +71,8 @@
                     de modo a regular as relações entre a administração
                     pública estadual e a sociedade.</p>
             </div>
-
-            <div>
-                <img class="responsive_img wow fadeInUp" width="auto" height="300" src="../imgs/Group 11.png" alt="">
-            </div>
-
         </div>
+
     </main>
 
     <div class="center">

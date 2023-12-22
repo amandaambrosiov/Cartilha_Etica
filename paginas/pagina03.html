@@ -7,8 +7,8 @@
 
     <!-- CDN WOW JS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <!-- STYLE ANIMATE -->
-    <link rel="stylesheet" href="../assets/css/animate.css">
+    <!-- CDN ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <!-- JS  -->
@@ -31,10 +31,14 @@
 
 <body class="background_green_body">
 
+    <button onclick="topFunction()" class="back_to_top back_to_top_responsive" id="myBtn" title="Go to top"><i
+            class="fa-solid fa-arrow-up"></i></button>
+
     <header class="page_header">
-        <div>
-            <a href="../index.html" class="btn_back"><i class="fa-solid fa-arrow-left"></i> Início</a>
-        </div>
+        <a href="../index.html">
+            <img class="logo_egp_pagina " src="../imgs/logoEGP2.png" alt="">
+            <img class="logo_egp_escuro_pagina " src="../imgs/logoEGP1.png" alt="">
+        </a>
         <div class="page_title">
             <h4 class="center">Cartilha EGPCE</h4>
             <h2 class="center">Questão de Ética</h2>
@@ -46,19 +50,22 @@
         </div>
     </header>
 
-    <main class="main background_green wow zoomIn" data-wow-delay="0.7s">
-
-        <h1 class="titulo titulo_branco wow fadeInLeft" data-wow-delay="0.9s"> Cartilha de Ética <br>
-            para Servidores EGPCE :<br>
-            Construindo Relações Positivas!
-        </h1>
+    <main class="main background_green">
 
         <div class="wrapper">
 
-            <img class="img_back" src="../imgs/figura2.png" width="auto" height="400" alt="">
+            <div>
+                <img class="img_back img_back03 wow zoomIn" width="auto" height="600" src="../imgs/figura02.png" alt="">
+            </div>
 
-            <div class="responsive_center">
-                <p class="p_white  wow fadeInLeft">Olá,<br>
+            <div>
+
+                <h1 class="titulo titulo_branco wow fadeInDown">Cartilha de Ética <br>
+                    para Servidores EGPCE:<br>
+                    Construindo Relações Positivas!
+                </h1>
+
+                <p class="paragrafo wow fadeInDown" data-wow-delay="0.4s">Olá,<br>
                     Começa aqui a nossa
                     jornada pela ética no
                     ambiente de trabalho.
@@ -68,7 +75,10 @@
                     responsáveis. Vamos
                     começar!</p>
             </div>
-            <img class="responsive_img wow fadeInUp" src="../imgs/Group 10.png" width="auto" height="400" alt="">
+
+            <div>
+                <img class="responsive_img wow fadeInUp" width="auto" height="300" src="../imgs/Group 11.png" alt="">
+            </div>
 
         </div>
 

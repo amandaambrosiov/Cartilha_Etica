@@ -54,3 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+var anoAtual = new Date().getFullYear();
+
+// Atualizar o conteúdo do elemento HTML com o ano atual
+document.getElementById('anoAtual').textContent = anoAtual;

@@ -16,6 +16,7 @@ body {
     max-width: 100%;
     padding: 0;
     transition: 0.3s ease;
+    position: relative;
 }
 
 /* BARRA DE SCROLL DO SITE  */
@@ -79,6 +80,9 @@ body::-webkit-scrollbar-thumb {
     color: white;
 }
 
+.page_title{
+    margin-left: -70px;
+}
 /* TITULO DA PAGINA NA CARTILHA  */
 .page_title h4 {
     font-weight: 300;
@@ -102,7 +106,7 @@ body::-webkit-scrollbar-thumb {
 /* BOTAO DE VOLTAR PARA PAGINA INICIAL  */
 .btn_back {
     background-color: #26a737;
-    padding: 5px 10px;
+    padding: 5px 12px;
     border-radius: 20px;
     text-decoration: none;
     color: white;
@@ -112,7 +116,7 @@ body::-webkit-scrollbar-thumb {
 
 .btn_back i {
     color: white;
-    margin-right: 4px;
+    /* margin-right: 4px; */
     transition: 0.3s;
 }
 
@@ -209,11 +213,32 @@ header {
     display: block;
 }
 
+.dark-mode .logo_egp_pagina {
+    display: none;
+}
+
+.dark-mode .logo_egp_escuro_pagina {
+    display: block;
+}
+
 
 .logo_egp_index {
     float: left;
 }
-
+.logo_egp_pagina {
+    height: 50px;
+    width: auto;
+    margin-left: 2rem;
+    margin-top: 6px;
+    float: left;
+}
+.logo_egp_escuro_pagina {
+    width: auto;
+    height: 53px;
+    margin-left: 2.1rem;
+    display: none;
+    float: left;
+}
 .logo_egp {
     height: 70px;
     margin-left: 2rem;
@@ -270,7 +295,8 @@ header {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     margin: 2rem auto;
     width: 50%;
-    min-height: 700px;
+    min-height: 600px;
+    position: relative;
 }
 
 .main_05 {
@@ -279,7 +305,8 @@ header {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     margin: 2rem auto;
     width: 50%;
-    min-height: 700px;
+    min-height: 600px;
+    position: relative;
 }
 
 
@@ -305,8 +332,8 @@ ul li {
 .img_index {
     display: flex;
     justify-content: center;
-    width: 90%;
-    height: auto;
+    /* width: 90%; */
+    /* height: auto; */
 }
 
 .texto {
@@ -361,7 +388,19 @@ ul li {
     color: #ffff;
 }
 
-
+.img_back{
+    display: flex;
+    position: absolute;
+    /* padding-top: 60px; */
+    bottom: 0;
+    left: 0;
+}
+.img_back03{
+    padding-top: 70px;
+}
+.img_04{
+    margin-top: 20px;
+}
 /* ################################ OUTROS FORMATOS ########################################  */
 
 /* FOOTER DOS LINKS PARA CARTILHA  */
@@ -437,10 +476,12 @@ ul li {
 
 .green_name {
     color: #26a737;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
 }
-
+p{
+    font-size: 18px;
+}
 .Freepick {
     color: #4ba726;
 }
@@ -472,14 +513,14 @@ ul li {
 /* TITULO DA SEGUNDA PAGINA  */
 .subtitle {
     color: #26a737;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin: 2rem;
 }
 
 /* TITULO das paginas */
 .titulo {
-    font-size: 3rem;
+    font-size: 2.3rem;
     display: flex;
     text-align: left;
     font-weight: bolder;
@@ -493,7 +534,7 @@ ul li {
 /* PARAGRAFO DA PAGINA DE OBJETIVOS  */
 .paragrafo {
     color: #ffff;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     margin: 0 10%;
@@ -677,7 +718,7 @@ ul li {
 }
 
 .paragrafo12 {
-    font-size: 25px;
+    font-size: 18px;
     margin: 1em 2em;
 }
 
@@ -786,6 +827,9 @@ strong a {
     color: #ffff;
     padding-bottom: 30px;
 }
+.p_acessar{
+margin-top: 6rem;
+}
 
 .acessar {
     padding-bottom: 30px;
@@ -820,6 +864,10 @@ strong a {
     transform: translateY(-5px);
 }
 
+.paginas{
+    filter: drop-shadow(10px 10px 4px grey);
+}
+
 /* FIM DO BOTAO BACK TO TOP  */
 
 /* RESPONSIVIDADE PARA COMPUTADOR */
@@ -830,7 +878,7 @@ strong a {
 
         /* MENU PARA COMPUTADOR  */
         .menu {
-            background-color: #26a737;
+            /* background-color: #26a737; */
             border-radius: 25px;
             float: right;
             margin-top: 20px;
@@ -839,9 +887,9 @@ strong a {
         }
 
         .menu a {
-            color: #ffff;
+            color: #26a737;
             text-decoration: none;
-            font-size: 17px;
+            font-size: 18px;
             position: relative;
             margin: 0 10px;
         }
@@ -853,7 +901,7 @@ strong a {
             height: 3px;
             bottom: 0;
             left: 0;
-            background-color: #ffff;
+            background-color: #26a737;
             visibility: hidden;
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -868,7 +916,7 @@ strong a {
         }
 
         .icone_white {
-            color: #ffff;
+            color: #26a737;
         }
 
         /* FIM DO MENU  */
@@ -904,8 +952,8 @@ strong a {
 
     .index_main {
         display: grid;
-        grid-template-columns: 70% 30%;
-        margin: 2rem 3rem;
+        grid-template-columns: 60% 40%;
+        margin: 2rem 25%;
     }
 
     /* COLUNA QUE DIVIDE IMAGEM E CAIXAS DE TEXTO DA PAGINA DE PRINCIPIOS  */
@@ -942,7 +990,18 @@ strong a {
         }
     }
 
+    @media (min-width:860px) {
+        .back_to_top_responsive{
+            display: none;
+        }
+
+    }
+
     @media (max-width:860px) {
+
+        .back_to_top_responsive{
+            display: block;
+        }
 
         /* HEADER RESPONSIVO  */
         .header1 {
@@ -1056,8 +1115,8 @@ strong a {
         }
 
         .img_index {
-            width: 90%;
-            height: auto;
+            /* width: 90%; */
+            /* height: auto; */
             margin: 3em 0 0 0;
         }
 
@@ -1182,7 +1241,12 @@ strong a {
 .footer {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     padding-top: 20px;
-    margin-bottom: -10px;
+    width: 100%;
+    bottom: 0;
+}
+.footer_ano{
+color: white;
+margin:0 4px;
 }
 
 .link {
@@ -1202,6 +1266,7 @@ strong a {
     font-size: 15px;
     padding: 8px;
     margin-top: 1rem;
+    margin-bottom: -10px;
 }
 
 .fa-copyright {
