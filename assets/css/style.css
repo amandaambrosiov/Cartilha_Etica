@@ -342,9 +342,7 @@ header {
 
 /* ############################ INICIO DO CONTEUDO PRINCIPAL ############################################### */
 .main {
-    padding-top: 20px;
-    padding-right: 20px;
-    padding: 2em 2em;
+    padding: 5em 5em;
     margin-bottom: 1rem;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     margin: 2rem auto;
@@ -618,6 +616,12 @@ p {
     color: #ffff;
 }
 
+.titulo_05{
+    padding: 1em 2.5em 0 2.5em;
+}
+.titulo_lista{
+    margin-left: 1em;
+}
 /* PARAGRAFO DA PAGINA DE OBJETIVOS  */
 .paragrafo {
     color: #ffff;
